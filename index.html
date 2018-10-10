@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Payment</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="icon" href="web/img/icons8-card-payment-64.png" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+		<link rel="stylesheet" type="text/css" href="web/css/style.css" />
+	</head>
+	<!--BACKGROUND IMAGE-->
+	<body class="body__img">
+		<!--CENTERED FORM FOR INIZIALIZE-->
+		<div class="center__form">
+			<!--INFORMATION ABOUT PERSON-->
+			<div class="form__info">
+				<h1 class="form__name">Harold Finch</h1>
+				<p class="form__total">Your total</p>
+				<!--SUM FOR PAYMENT-->
+				<p class="form__money">$88</p>
+			</div>
+			<!--PAYMENT FORM FOR PAID-->
+			<form class="paid" action="" method="get">
+				<!--CREDIT CARD NUMBER-->
+				<label for="card_number" class="card__number">
+					Credit card number<br>
+					<input type="text" name="card_number" id="card_number" placeholder="Your credit number" maxlength="16" required>
+				</label>
+				<!--DATE CREDIT CARD-->
+				<label for="expiration_date" class="expiration__date">
+					Expiration date<br>
+					<select name="expiration_date" id="expiration_date" class="expiration__date--month" required>
+						<option>Month</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+
+					<select name="expiration_date" id="expiration_date" placeholder="Month" class="expiration__date--year" required>
+						<option>Year</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+					</select>
+				</label>
+				
+				<!--CVV COSE CREDIT CARD-->
+				<label for="CVV" class="CVV">
+					CVV<br>
+					<input type="text" name="CVV" id="CVV" placeholder="CVV" minlength="3" maxlength="4" required>
+				</label>
+				<p class="cvv__info">3 or 4 digits - <a class="cvv__info--a" href="#">view example</a></p>
+				<hr>
+
+				<input type="submit" name="submit" value="Pay">
+
+				<a href="#" class="form__cancel">Cancel order</a>
+			</form>
+		</div>
+		
+	</body>
+</html>
